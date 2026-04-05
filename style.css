@@ -227,7 +227,7 @@ form button:hover {
     /*efeito de movimento no botão*/
     box-shadow: 0 8px 20px rgb(0, 0, 0, 0.2);
     background: var(--primary-hover);
-
+    color:#000000;
 }
 
 #contato h2 {
