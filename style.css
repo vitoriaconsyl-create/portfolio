@@ -30,7 +30,8 @@
     --text-input: #ffffff;
 }
 
-body { /* não utilizo . nem # nem nada quando vou estilizar instancias especificas do HTML ex: p, h1, div*/
+body {
+    /* não utilizo . nem # nem nada quando vou estilizar instancias especificas do HTML ex: p, h1, div*/
     font-family: 'Segoe UI', sans-serif;
     font-size: 18px;
     margin: 0;
@@ -53,7 +54,8 @@ header {
     margin: 0 auto;
 }
 
-.menu-toggle { /*uso . quando se refere a uma classe*/
+.menu-toggle {
+    /*uso . quando se refere a uma classe*/
     display: none;
     font-size: 2.5rem;
 }
@@ -78,7 +80,8 @@ nav a:hover {
     color: var(--text-main);
 }
 
-#btn-tema { /*uso # quando referencio um id*/
+#btn-tema {
+    /*uso # quando referencio um id*/
     padding: 8px 16px;
     border: none;
     cursor: pointer;
@@ -90,11 +93,13 @@ nav a:hover {
 }
 
 #btn-tema:hover {
+    /*quando o ponteiro passa por cima*/
     transform: scale(1.05);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 #btn-tema:active {
+    /*ao clicar ou pressionar...*/
     transform: scale(0.95);
 }
 
@@ -178,7 +183,7 @@ a {
 
 .cardProjeto:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
 form {
@@ -233,7 +238,7 @@ form button:hover {
     /*efeito de movimento no botão*/
     box-shadow: 0 8px 20px rgb(0, 0, 0, 0.2);
     background: var(--primary-hover);
-    color:#000000;
+    color: #000000;
 }
 
 #contato h2 {
@@ -284,6 +289,7 @@ footer {
 }
 
 #btn-topo {
+    /*estilização do botao de voltar para o topo*/
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -294,8 +300,7 @@ footer {
     background: var(--primary);
     color: white;
     cursor: pointer;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-    display: none; /* começa escondido */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     transition: 0.3s;
 }
 
