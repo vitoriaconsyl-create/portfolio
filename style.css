@@ -173,6 +173,12 @@ a {
     flex: 1 1 300px;
     max-width: 400px;
     border: 1px solid var(--border);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cardProjeto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
 
 form {
