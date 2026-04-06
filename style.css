@@ -30,7 +30,7 @@
     --text-input: #ffffff;
 }
 
-body {
+body { /* não utilizo . nem # nem nada quando vou estilizar instancias especificas do HTML ex: p, h1, div*/
     font-family: 'Segoe UI', sans-serif;
     font-size: 18px;
     margin: 0;
@@ -53,7 +53,7 @@ header {
     margin: 0 auto;
 }
 
-.menu-toggle {
+.menu-toggle { /*uso . quando se refere a uma classe*/
     display: none;
     font-size: 2.5rem;
 }
@@ -78,7 +78,7 @@ nav a:hover {
     color: var(--text-main);
 }
 
-#btn-tema {
+#btn-tema { /*uso # quando referencio um id*/
     padding: 8px 16px;
     border: none;
     cursor: pointer;
