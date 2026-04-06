@@ -3,6 +3,7 @@ const btnTema = document.querySelector('#btn-tema');
 const body = document.body;
 const menuToggle = document.getElementById("menu-toggle");
 const nav = document.querySelector("nav ul");
+const btnTopo = document.getElementById("btn-topo");
 
 menuToggle.addEventListener("click", () => {
     nav.classList.toggle("active");
@@ -48,3 +49,18 @@ function alternarTema() {
 btnTema.addEventListener('click', alternarTema);
 
 atualizarTextoBotao();
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+        btnTopo.style.display = "block";
+    } else {
+        btnTopo.style.display = "none";
+    }
+});
+
+btnTopo.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});
