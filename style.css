@@ -274,6 +274,7 @@ footer {
 .btn-rede:hover {
     background: var(--primary-hover);
     transform: scale(1.05);
+    color: black;
 }
 
 #btn-topo {
