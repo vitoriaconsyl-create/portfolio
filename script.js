@@ -87,15 +87,16 @@ const listaProjetos = [
 
 const container = document.getElementById("lista-projetos");
 if (container) {
-    listaProjetos.forEach((proj) => {
-        const card = document.createElement("article");
-        card.classList.add("cardProjeto");
+    listaProjetos.forEach((proj) => { // percorre cada item do array
+        const card = document.createElement("article"); //cria o card
+        card.classList.add("cardProjeto"); //adiciona uma classe
 
-        card.innerHTML = `
+        //insere dentro do card
+        card.innerHTML = ` 
             <h3>${proj.titulo}</h3>
             <p>${proj.descricao}</p>
             <a href="${proj.link}" target="_blank">Ver projeto no GitHub</a>
         `;
-        container.appendChild(card);
+        container.appendChild(card); //adiciona o card dentro do container
     });
 }
